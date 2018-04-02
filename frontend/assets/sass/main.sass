@@ -1,0 +1,90 @@
+@import 'settings'
+@import '../../node_modules/foundation-sites/scss/foundation'
+
+@include foundation-global-styles
+@include foundation-grid
+@include foundation-typography
+@include foundation-button
+@include foundation-forms
+@include foundation-label
+@include foundation-visibility-classes
+@include foundation-float-classes
+
+@import 'buttons'
+@import 'forms'
+@import 'navigation'
+@import 'portfolio'
+
+
+h1.alternate
+  color: $dark-yellow
+  padding-top: 2.5rem
+h2.alternate
+  color: $dark-yellow
+  padding-top: 2rem
+  padding-bottom: 2rem
+  padding-left: 1.5rem
+b
+  color: $dark-yellow
+
+body, html
+  overflow-x: hidden
+body
+  background-color: white
+  
+.login-form-header
+  position: relative
+  padding-top: 4rem
+  margin-bottom: 1rem
+
+.triangle
+  @include triangle(30px, $blue)
+
+.label
+  text-align: center
+
+.container
+  background-color: $light-gray
+
+#app, .row.main
+  min-height: 100vh
+  background-color: $light-gray
+
+footer
+  font-size: $small-font-size
+  padding-top: 2rem
+  padding-bottom: 2rem
+  a
+    display: block
+  .copyright
+    margin-top: 1rem
+    color: $dark-yellow
+    @media screen and (min-width: 40em)
+      text-align: right
+
+.form-content
+  margin: 0 !important
+
+.logo
+  padding-top: 4rem
+  display: block
+  margin: 0 auto
+  &.small
+    width: 150px
+    padding-top: 1rem
+    padding-bottom: 1rem
+    @media screen and (min-width: 40em)
+      float: left
+  &.main
+    @include breakpoint(medium up)
+      margin-top: 4rem
+    float: none
+
+
+.intro-para
+  line-height: 5rem
+
+.head-bgimg
+  background-image: url("../images/head-img.png")
+  background-repeat: repeat-x
+  background-position: center

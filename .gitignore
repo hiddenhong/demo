@@ -1,0 +1,21 @@
+# frontend
+
+.DS_Store
+frontend/node_modules/*
+frontend/build/bundle.js
+frontend/npm-debug.log
+frontend/assets/stylesheets/*
+frontend/dist/*
+
+# web
+
+web/ENV/*
+web/bin/*
+web/include/*
+web/lib/*
+web/local/*
+web/pip-selfcheck.json
+web/docker_django/apps/authentication/migrations/*
+*.pyc
+
+

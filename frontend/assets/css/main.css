@@ -1,0 +1,242 @@
+body {
+  padding-top: 50px;
+}
+
+.account-form {
+  /*width: 400px;*/
+  margin: 200px auto;
+}
+
+.margin-bottom-sm, .margin-top-sm {
+  margin-bottom: 10px !important;
+}
+
+.iframe iframe {
+  width: 100%;
+  /* height: 400px;*/
+  /* height: 1500px !important;*/
+  position: static !important;
+}
+
+.registration-form, .change-password-form {
+  /*width: 400px;*/
+  margin: 50px auto; 
+}
+
+.registration-page, .login-page, .change-password-page, .me-page {
+  max-width: 400px;
+}
+
+.me-page {
+  margin: 100px auto;
+}
+
+.service-item {
+  /*width: 100px;*/
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: skyblue;
+  margin-right: 40px;
+}
+
+.navbar {
+  background-color: #e7e7e7;
+  color: #4C0070;
+}
+
+.nav.navbar-nav .active {
+  color: #555;
+  background-color: #e7e7e7;
+}
+
+.nav.navbar-nav .navbar-logo {
+  background: url('../images/icenter_logo_400x400.png') no-repeat center;
+  background-size: 36px;
+  width: 80px;
+  color: transparent !important;
+}
+
+.notFound-page .logo {
+  max-width: 100px;
+}
+
+.nav.navbar-nav li a {
+  color: #000;
+}
+
+.nav.navbar-nav li a.is-selected-service{
+  color: #4C0070;
+}
+
+.navbar .dropdown {
+  margin-right: 30px;
+  border: none;
+}
+.navbar .dropdown>div {
+  padding-top: 10px;
+
+}
+
+.form-error {
+  margin-left: 12px;
+}
+
+.change-password-form .form-error {
+  margin-left: 56px;
+}
+
+.footer {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.1;
+  letter-spacing: 0;
+  text-transform: inherit;
+  /* color: #ffffff; */
+  background-color: #4C0070;
+  /* border-color: #FFFFFF; */
+  /* border-color: #4C0070; */
+  /* border-top: 3px solid; */
+  /* padding-top: 3px; */
+  margin-top: -5px;
+  position: relative;
+  z-index: 1001;
+}
+
+.route-serive .footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer .container {
+  color: #ffffff;
+}
+
+.pdb5 {
+    padding-bottom: 5px;
+}
+
+.pdt10 {
+    padding-top: 10px;
+}
+
+.pdr30 {
+    padding-right: 30px;
+}
+
+.pdr5 {
+  padding-right: 5px;
+}
+
+.footerwdgthr {
+  background-color: #FFFFFF;
+  border: 1px solid transparent;
+  opacity: 0.3;
+  width: 100%;
+}
+
+.mrt30 {
+  margin-top: 30px;
+}
+
+.mrt10 {
+  margin-top: 10px;
+}
+
+.mrb10 {
+  margin-bottom: 10px;
+}
+
+.alignr-spsl {
+    text-align: right;
+}
+
+.alignc-spsl {
+    text-align: center;
+}
+
+@media (max-width: 990px) {
+  .alignr-spsl {
+      text-align: left;
+  }
+
+  .nav.navbar-nav .navbar-logo{
+    background-size: 36px;
+    background-position: 13px center;
+  }
+}
+
+.bg-success{ background-color: #00c851; }
+.bg-warning { background-color: #ff4444; }
+.text-white { color: #fefefe; }
+.text-black { color: #000; }
+
+
+.label {
+    display: block;
+    padding: .33333rem .5rem;
+    font-size: .8rem;
+    font-weight: normal;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: default;
+    border-radius: 0;
+    background: #dec03d;
+    color: #fefefe
+}
+
+.label.secondary {
+    background: #777;
+    color: #fefefe
+}
+
+.label.success {
+    background: #3adb76;
+    color: #000;
+}
+
+.label.warning {
+    background: #ffae00;
+    color: #fefefe
+}
+
+.label.alert {
+    background: #ec5840;
+    color: #fefefe
+}
+
+.input-wrapper{
+  margin-bottom: 24px;
+}
+
+.input-wrapper .form-error {
+  margin-top: 2px;
+  margin-bottom: -22px;
+}
+
+.input-wrapper .form-control-feedback.warning {
+  width: auto;
+  height: auto;
+  top: 4px;
+  bottom: 4px;
+  line-height: 18px;
+  color: #fff;
+  background: #ec5840;
+}
+
+.registration-form .form-group {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.registration-form .input-wrapper .form-control-feedback.warning {
+  top: 30px;
+}
+
+
+
+

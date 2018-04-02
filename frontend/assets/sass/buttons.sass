@@ -1,0 +1,41 @@
+@import 'variables'
+
+.button
+  outline: none
+  font-weight: bold
+  border: 1px solid darken($dark-yellow, 20%)
+  margin-right: 1rem
+  letter-spacing: 0.1rem
+
+  &.hollow
+    background-color: rgba(0,0,0,0)
+    border-left: 2px solid $blue
+    border-bottom: 2px solid $blue
+    border-top: none
+    border-right: none
+    position: relative
+    span:not(.fa)
+      @include triangle(15px, $blue)
+    &:hover, &.active
+      background-color: $blue
+      color: $dark-yellow
+      span:not(.fa)
+        @include triangle(15px, $dark-yellow)
+
+  &.expanded
+    display: inline-block
+
+  &.rounded
+    border-radius: 6px
+  &.alternate
+    background-color: $blue
+    color: $dark-yellow
+    position: relative
+    border: none
+    span
+      @include triangle(15px, $dark-yellow)
+
+a.button
+  &.back
+    margin-top: 3.5rem
+    margin-right: 0

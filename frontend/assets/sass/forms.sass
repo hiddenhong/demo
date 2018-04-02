@@ -1,0 +1,126 @@
+@import "variables"
+
+.form-content
+  div.columns.small-12, div.columns.small-11
+    margin-bottom: 2rem
+  .form-error
+    margin-top: 0.5rem
+    margin-bottom: -1.64rem
+
+form
+
+  &.disabled
+    opacity: 0.3
+    position: relative
+    .overlay
+      position: absolute
+      color: black
+      right: 40%
+      top: 40%
+
+  select
+    margin-bottom: 0
+
+  #other_bank
+    display: none
+
+  .fa
+    margin-top: 0.65rem
+
+  @media screen and (max-width: 40em)
+    [placeholder]:focus::-webkit-input-placeholder
+      transition: text-indent 0.5s 0.5s ease
+      text-indent: -100%
+      opacity: 1
+
+  @media screen and (min-width: 40em)
+    [placeholder]::-webkit-input-placeholder
+      opacity: 0
+
+
+  .input-group-field
+    border-right: none !important
+    border-left: none !important
+
+  .input-group
+    margin-bottom: 0
+    position: relative
+
+  input[type=text], input[type=number], input[type=password]
+    border-bottom: 2px solid $blue
+    border-left: 2px solid $blue
+    border-top: 0
+    border-right: 0
+    &.no-left-border
+      border-left: none
+    margin-bottom: 0
+
+  .field-label
+    text-transform: uppercase
+    text-align: center
+    color: $dark-yellow
+    background-color: $blue
+    font-weight: bold
+    padding: 0.4rem
+    &.hollow
+      background-color: rgba(0,0,0,0)
+
+    @media screen and (max-width: 40em)
+      background-color: rgba(0,0,0,0)
+      color: $blue
+      text-align: left
+      padding: 0
+
+  .input-group-label
+    background-color: $dark-yellow
+    color: $blue
+    font-weight: bold
+    border-bottom: 2px solid $blue
+    &.left
+      border-left: 2px solid $blue
+    &.right
+      border-right: 2px solid $blue
+    &.is-invalid-input
+      border-color: $red
+      border-top: 0
+
+.radio-section
+  .radio-item
+    background-color: $dark-yellow
+    padding-right: 0
+    margin-bottom: 1rem
+    label
+      width: 85%
+      margin-right: 0
+      padding-bottom: 0.5rem
+      padding-top: 0.5rem
+
+    &:hover
+      background-color: lighten($dark-yellow, 10%)
+    &:nth-child(even)
+      float: right
+      margin-right: 0
+
+.legend-inline-error
+  margin-top: -1rem
+
+
+.label
+
+  &.success
+    color: black
+
+  &.strong
+    background-color: $green
+
+  &.good
+    background-color: $orange
+
+  &.weak
+    background-color: $red
+    color: white
+
+  &.strong, &.good, &.weak
+    font-weight: bold
+    float: right
+    margin-top: -2rem

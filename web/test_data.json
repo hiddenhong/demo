@@ -1,0 +1,21 @@
+{
+    "proqod_login": {
+        "username": "logintest",
+        "password": "1234567890"
+    },
+    "proqod_register": {
+        "name": "lalala3",
+        "email": "lalala3@q.com",
+        "username": "lalala3",
+        "password": "1234567890"
+    },
+    "wiki_gitlab_register": {
+        "email": "lala3@proqod.com",
+        "username": "lala3",
+        "sso_password": "register8b90fedd"
+    },
+    "wiki_gitlab_login": {
+        "username": "mantesterx",
+        "sso_password": "register8b90fedd"
+    }
+}

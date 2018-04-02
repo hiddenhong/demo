@@ -1,0 +1,26 @@
+@import url(https://fonts.googleapis.com/css?family=Lato)
+
+$green: #3adb76
+$blue: #3c479d
+$light-gray: #fcfcfc
+$medium-gray: #f1f3f4
+$dark-gray: #bebebe 
+$black: #0a0a0a
+$white: #fefefe
+$orange: #ffae00
+$red: #ec5840
+
+$dark-yellow: #dec03d
+
+$font-family-sans-serif: Lato, Arial, sans-serif
+
+@mixin triangle($size, $color)
+  position: absolute
+  top: 0
+  right: 0
+  width: 0
+  height: 0
+  border-style: solid
+  border-width: 0 $size $size 0
+  border-color: transparent $color transparent transparent
+  

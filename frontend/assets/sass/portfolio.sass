@@ -1,0 +1,61 @@
+@import 'variables'
+
+.portfolio
+  .row
+    margin: 0
+    
+  .portfolio-content
+    background-color: darken($light-gray, 2%)
+    @media screen and (max-width: 40em)
+      .property-name
+        text-align: center
+      ol
+        .small-6
+          border: 1px solid dark($light-gray, 2%)
+          min-height: 2rem
+          &:nth-of-type(even)
+            background-color: $blue
+            color: $dark-yellow
+          &:nth-of-type(odd):not(.button)
+            background-color: $medium-gray
+            color: $black
+            border-bottom: 1px solid $blue
+
+    .property-name
+      position: relative
+      span
+        @include triangle(15px, $dark-yellow)
+    
+    tr,  th, .property-name
+      color: $dark-yellow
+      background-color: $blue
+      border: 1px solid darken($light-gray, 2%)
+
+    .button.hollow
+      &.edit
+        margin-top: 1rem
+      float: right
+      &.add, &:last-child
+        margin-right: 0
+
+    li
+      list-style: none
+      ol
+        margin-left: 0
+      table
+        width: 100%
+        border-collapse: collapse
+        tr, td, th
+          padding: 0.25rem 0.5rem
+          text-align: center
+        
+        td
+          color: darken($dark-yellow, 25%)
+          background-color: white
+          border-bottom: 1px solid $blue
+          border-left: 1px solid $blue
+
+        tr:nth-child(even)
+          td
+            padding-top: 1rem
+            padding-bottom: 1rem
